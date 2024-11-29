@@ -2,11 +2,11 @@
 
 namespace App\Domain;
 
-class customerService {
-    private $ID;
+class CustomerService {
+    private $id;
     private $Name;
 
-    function GetCustomer($id) {
+    function getCustomer($id) {
         return NULL;
     }
 
