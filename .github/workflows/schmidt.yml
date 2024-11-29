@@ -4,8 +4,6 @@ on:
     types: [ opened, synchronize ]
   pull_request_review_comment:
     types: [ created ]
-  issue_comment:
-    types: [ created ]
 
 jobs:
   review:
@@ -18,12 +16,12 @@ jobs:
       - name: AI PR Review
         uses: vadim-heyworld/frau-schmidt@v0.5.2-alpha
         with:
-          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          openai-api-key: ${{ secrets.FRAU_SCHMIDT_OPENAI_API_KEY }}
           project-name: 'tms'
           openai-model: 'gpt-4o'
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PRIVATE_KEY }}
-          installation-id: ${{ secrets.APP_INSTALLATION_ID }}
+          app-id: ${{ secrets.FRAU_SCHMIDT_APP_ID }}
+          private-key: ${{ secrets.FRAU_SCHMIDT_APP_PRIVATE_KEY }}
+          installation-id: ${{ secrets.FRAU_SCHMIDT_APP_INSTALLATION_ID }}
           full-scan: 'true'
           enable-replies: 'true'
           include-project-prompts-in-replies: 'true'
