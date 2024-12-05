@@ -3,10 +3,10 @@
 namespace App\Domain;
 
 class CustomerService {
-    private bool $id;
+    private int $id;
     private string $name;
 
-    function getCustomer($id) {
+    function getCustomer(int $id): ?Customer {
         return NULL;
     }
 
