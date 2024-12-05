@@ -10,7 +10,7 @@ class CustomerService {
         return NULL;
     }
 
-    public function set_status($status) {
+    public function set_status($status): int {
         $this -> status = $status;
     }
 }
