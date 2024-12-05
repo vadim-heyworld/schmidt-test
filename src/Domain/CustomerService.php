@@ -4,7 +4,7 @@ namespace App\Domain;
 
 class CustomerService {
     private bool $id;
-    private string $name;
+    private string $name_;
 
     function getCustomer($id) {
         return NULL;
