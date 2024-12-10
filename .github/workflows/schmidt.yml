@@ -22,6 +22,6 @@ jobs:
           app-id: ${{ secrets.FRAU_SCHMIDT_APP_ID }}
           private-key: ${{ secrets.FRAU_SCHMIDT_APP_PRIVATE_KEY }}
           installation-id: ${{ secrets.FRAU_SCHMIDT_APP_INSTALLATION_ID }}
-          full-scan: 'true'
+          full-scan: 'false'
           enable-replies: 'true'
           include-project-prompts-in-replies: 'true'
